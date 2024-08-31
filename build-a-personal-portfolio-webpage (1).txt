@@ -1,0 +1,499 @@
+** start of undefined **
+
+<!DOKTYPE html>
+<html lang="en">
+  <!--Hier ist Head bereich-->
+  <head>
+    <title>Meine persönliche Webseite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://kit.fontawesome.com/a6bbf1d2af.js" crossorigin="anonymous"></script>
+  </head>
+  <!--Body bereich-->
+  <body> 
+  <!-- Hier beginnt Nav --> 
+  <nav id="navbar">
+    <!--UL liest-->
+    <ul id="nav-list">
+      <li>
+        <a href="#welcome-section"><i class="glyphicon glyphicon-user"></i>Über Mich</a>
+      </li>
+      <li>
+        <a href="#projects"><i class='fas fa-award'></i>
+Projekte</a>
+      </li>
+      <li>
+        <a href="#kontakt"><i class="glyphicon glyphicon-envelope"></i>Kontakt</a>
+      </li>
+    </ul>
+  </nav>
+  <!--Endet Nav-Bereich-->
+  <!-- Beginnt Hauptteil Head-->
+  <section id="welcome-section" class="welcom-section">
+    <h1>Hi Ich bin Nana</h1>
+    <p>Ich bin angehende Webentwicklerin</p>
+  <!--Pingvin Grüsst die Welt-->
+  <div class="penguin">
+      <div class="penguin-head">
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="chin"></div>
+        <div class="eye left">
+          <div class="eye-lid"></div>
+        </div>
+        <div class="eye right">
+          <div class="eye-lid"></div>
+        </div>
+        <div class="blush left"></div>
+        <div class="blush right"></div>
+        <div class="beak top"></div>
+        <div class="beak bottom"></div>
+      </div>
+      <div class="shirt">
+        <div>💜</div>
+        <p>Hallo Welt</p>
+      </div> 
+      <div class="penguin-body">
+        <div class="arm left"></div>
+        <div class="arm right"></div>
+        <div class="foot left"></div>
+        <div class="foot right"></div>
+      </div>
+    </div>
+  </section>
+  <!--Mittlere Teil-->
+  <section id="projects" class="projekte">
+   <h2>Einige Projekte von mir<h2>
+     <div class="projekt-grid">
+       <a href="">
+         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="Tribute page" class="projekt-img">
+         <p class="projrct-tile">Tribute Page</p>
+       </a>
+        <a href="">
+         <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Süsse Katze" class="projekt-img">
+         <p class="projrct-tile">Katzen App</p>
+       </a>
+        <a href="">
+         <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="Coffee Menu" class="projekt-img">
+         <p class="project-tile">Speise Karte für Cafe</p>
+       </a>
+        <a href="">
+         <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg" alt="Katzen" class="projekt-img">
+         <p class="project-tile">Flexbox</p>
+       </a>
+        <a href="">
+         <img src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png" alt="Magazin Webseite" class="projekt-img">
+         <p class="project-tile">Magazin Erstellen</p>
+       </a>
+        <a href="">
+         <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" alt="Umfrage Formular" class="projekt-img">
+         <p class="project-tile">Umfrage Formular</p>
+       </a>
+     </div> 
+  </section>
+  <!--Kontakt Bereich-->
+  <section id="kontakt" class="kontakt">
+    <div id="kontakt-head">
+      <h2>Let´s work together...</h2>
+      <p id="kontakt-p">How do you take your coffee?</p>
+    </div>
+    <div id="links">
+      <a href="https://github.com/" id="profile-link" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
+      <a href="https://de-de.facebook.com/" id="profile-link" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://twitter.com/?lang=de" id="profile-link" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+      <a href="" id="profile-link" target="_blank"><i class="fas fa-at"></i>
+      E-Mail
+      </a>
+    </div>
+  </section>
+   <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        Die Seite habe ich nach Beispiel nachgebaut<br/>
+        Volgende Quellen habe ich benutzt:<br />
+        <a href="https://freecodecamp.org">freeCodeCamp</a>
+        <a href="https://www.youtube.com/watch?v=dlxN-Nz_Xkg">YouTube</a>
+        <a href="https://wiki.selfhtml.org/">SELFHTML</a>
+        <a href="https://www.w3schools.com/html/default.asp">w3schools</a>
+      </address>
+    </footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/*Body Teil*/
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*Hier fängt Navigation an*/
+#navbar{
+background-color: #be3144;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+@media (max-width: 800px){
+  #navbar{
+    background-color: teal;
+  }
+}
+/*Liesten Stylen */
+#nav-list{
+  display: flex;
+  flex-direction: row;
+  }
+  li{
+    list-style: none;
+  }
+  li > i{
+    text-decoration: none;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 16px 32px;
+  }
+  a:hover{
+    background-color: #45567d;
+  }
+  /*Hier fängt erster Section*/
+  #welcome-section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffb3;     
+    background-image: linear-gradient(
+      62deg,
+       #008080 0%,
+      #ff0080 100%
+    );
+  }
+  /*Überschrift*/
+  h1{
+    padding: 40px;
+    color: white;
+    font-size: 64;
+    font-weight: 700;
+  }
+
+  #welcome-section > p{
+    padding: 0;
+    color: #334d00;
+     font-size: 32px;
+    font-style: italic;
+    font-weight: 100;
+  }
+  @media (max-width: 600px){
+  p{
+    background-color: yellow;
+  }
+}
+div > a > p:hover{
+  background-color: lime;
+  font-size: 40px;
+}
+/*Pinguin*/
+.penguin {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 75px;
+  z-index: 4;
+  position: relative;
+  transition: transform 1s ease-in-out 0ms;
+}
+
+.penguin * {
+  position: absolute;
+}
+
+.penguin:active {
+  transform: scale(1.5);
+  cursor: not-allowed;
+}
+
+.penguin-head {
+  width: 50%;
+  height: 45%;
+  background: linear-gradient(
+    45deg,
+    gray,
+    rgb(239, 240, 228)
+  );
+  border-radius: 70% 70% 65% 65%;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+}
+
+.face {
+  width: 60%;
+  height: 70%;
+  background-color: white;
+  border-radius: 70% 70% 60% 60%;
+  top: 15%;
+}
+
+.face.left {
+  left: 5%;
+}
+
+.face.right {
+  right: 5%;
+}
+
+.chin {
+  width: 90%;
+  height: 70%;
+  background-color: white;
+  top: 25%;
+  left: 5%;
+  border-radius: 70% 70% 100% 100%;
+}
+
+.eye {
+  width: 15%;
+  height: 17%;
+  background-color: black;
+  top: 45%;
+  border-radius: 50%;
+}
+
+.eye.left {
+  left: 25%;
+}
+
+.eye.right {
+  right: 25%;
+}
+
+.eye-lid {
+  width: 150%;
+  height: 100%;
+  background-color: white;
+  top: 25%;
+  left: -23%;
+  border-radius: 50%;
+}
+
+.blush {
+  width: 15%;
+  height: 10%;
+  background-color: pink;
+  top: 65%;
+  border-radius: 50%;
+}
+
+.blush.left {
+  left: 15%;
+}
+
+.blush.right {
+  right: 15%;
+}
+
+.beak {
+  height: 10%;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.beak.top {
+  width: 20%;
+  top: 60%;
+  left: 40%;
+}
+
+.beak.bottom {
+  width: 16%;
+  top: 65%;
+  left: 42%;
+}
+
+.shirt {
+  font: bold 16px Helvetica, sans-serif;
+  top: 195px;
+  left: 127.5px;
+  z-index: 1;
+  color: #6a6969;
+}
+
+.shirt div {
+  font-weight:  initial;
+  top: 15px;
+  left: 37px;
+}
+
+.penguin-body {
+  width: 53%;
+  height: 45%;
+  background: linear-gradient(
+    45deg,
+    rgb(134, 133, 133) 0%,
+    rgb(234, 231, 231) 25%,
+    white 67%
+  );
+  border-radius: 80% 80% 100% 100%;
+  top: 40%;
+  left: 23.5%;
+}
+
+.penguin-body::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 45%;
+  background-color: gray;
+  top: 10%;
+  left: 25%;
+  border-radius: 0% 0% 100% 100%;
+  opacity: 70%;
+}
+
+.arm {
+  width: 30%;
+  height: 60%;
+  background: linear-gradient(
+    90deg,
+    gray,
+    rgb(209, 210, 199)
+  );
+  border-radius: 30% 30% 30% 120%;
+  z-index: -1;
+}
+
+.arm.left {
+  top: 35%;
+  left: 5%;
+  transform-origin: top left; 
+  transform: rotate(130deg) scaleX(-1);
+  animation: 3s linear infinite wave;
+}
+
+.arm.right {
+  top: 0%;
+  right: -5%;
+  transform: rotate(-45deg);
+}
+
+@keyframes wave {
+  10% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(130deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(130deg) scaleX(-1);
+  }
+}
+
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: orange;
+  top: 85%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.foot.left {
+  left: 25%;
+  transform: rotate(80deg);
+}
+
+.foot.right {
+  right: 25%;
+  transform: rotate(-80deg);
+}
+
+/*Projekten Teil Heuptteil*/
+  .projekte{
+    margin: 0;
+    padding: 128px 32px;
+    text-align: center;
+    background-color: #45567d;
+  }
+ h2{
+    font-size: 52px;
+    color: white;
+  }
+  /*img Stylen*/
+  .projekt-img{
+    height: calc(100% - 76px);
+    width: 100%;
+    object-fit: cover;
+  }
+  /*Paragraf Namen Stylen*/
+  .project-tile{
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 32px 0;
+  }
+  .projekt-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 64px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0;
+    margin-bottom: 96px;
+  }
+  /*Kontak Teil Stylen*/
+  #kontakt{
+    background-color: #303842;
+    width: 100%;
+    height: 495px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*Paragrafen Stylen*/
+  #kontakt-p{
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    font-size: 18px;
+  }
+  /*Footer*/
+  footer  {
+background-color: #be3144;
+top: 0;
+width: 100%;
+color: #3a3d40;
+align-items: center;
+  text-align: center;
+  padding: 0.3em;
+}
+footer > address > a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0;
+  
+}
+
+
+** end of undefined **
+
